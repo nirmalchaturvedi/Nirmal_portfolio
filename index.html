@@ -1,11 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-sc   ale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nirmal Chaturvedi Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        #header {
+            background: linear-gradient(120deg, #3498db, #8e44ad);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            animation: fadeInDown 1s ease;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .header-text {
+            margin-top: 50px;
+        }
+
+        .header-text h1 {
+            font-size: 48px;
+            margin: 0;
+            line-height: 1.2;
+            animation: fadeInUp 1s ease;
+        }
+
+        .header-text p {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        #about {
+            background: #fff;
+            padding: 60px 0;
+            animation: fadeIn 1s ease;
+        }
+
+        #about img {
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        #certificates {
+            background: #f9f9f9;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .sub-title {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .certificate-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .certificate-item {
+            margin-bottom: 30px;
+        }
+
+        .certificate-item img {
+            width: 200px;
+            height: auto;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .certificate-item img:hover {
+            transform: scale(1.05);
+        }
+
+        #contact {
+            background: #2c3e50;
+            color: white;
+            padding: 60px 0;
+        }
+
+        .contact-left {
+            margin-bottom: 30px;
+        }
+
+        .contact-left h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .contact-left p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .social-icons a {
+            margin-right: 10px;
+            font-size: 24px;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #3498db;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form button {
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        form button:hover {
+            background: #2980b9;
+        }
+    </style>
 </head>
+
 <body>
     <div id="header">
         <div class="container">
@@ -20,38 +189,28 @@
             </nav>
             <div class="header-text">
                 <h1>Hi There <br>I'm Nirmal Chaturvedi</h1>
-                <p>Persuing Computer Engineering at MIT AOE</p>
+                <p>Pursuing Computer Engineering at MIT AOE</p>
             </div>
         </div>
     </div>
-    
+
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/vivek.jpeg">
+                    <img src="images/vivek.jpeg" alt="Nirmal Chaturvedi">
                 </div>
                 <div class="about-col-2">
                     <h1 class="heading">About Me</h1>
-                    <p>Hi my name is Nirmal Chaturvedi and I am currently pursuing a 
-                        Bachelor of Technology (BTech) degree in Computer Engineering 
-                        at MIT Academy of Engineering (MIT AOE) in Alandi my technical 
-                        skills include C/C++, Java, frontend web development, and PowerBI. <br><br> 
-                        I completed my high school education at SPM English Medium School 
-                        and attended Abhishek Vidyalayam Junior College for my higher secondary 
-                        education, where I scored 80% in 10th grade and 77% in 12th grade.
-                        In my leisure time, I enjoy swimming, cycling, and working out at the gym.<br><br> 
-                        I am proficient at speaking english and presenting myself I have completed many 
-                        courses like Data Science for Engineers form NPTEL, PowerBI from Infosys springboard, 
-                        PCAP: Programming Essentials in Python form CISCO networking academy, MATLAB and participation
-                         certificate of our college coding competition with valid certificates. 
-                        
+                    <p>Hi, my name is Nirmal Chaturvedi, and I am currently pursuing a Bachelor of Technology (BTech) degree in Computer Engineering at MIT Academy of Engineering (MIT AOE) in Alandi. My technical skills include C/C++, Java, frontend web development, and PowerBI. <br><br>
+                        I completed my high school education at SPM English Medium School and attended Abhishek Vidyalayam Junior College for my higher secondary education, where I scored 80% in 10th grade and 77% in 12th grade. In my leisure time, I enjoy swimming, cycling, and working out at the gym. <br><br>
+                        I am proficient in speaking English and presenting myself. I have completed many courses such as Data Science for Engineers from NPTEL, PowerBI from Infosys Springboard, PCAP: Programming Essentials in Python from CISCO Networking Academy, MATLAB, and a participation certificate in my college's coding competition.
                     </p>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div id="certificates">
         <div class="container">
             <h1 class="sub-title">My Certificates</h1>
@@ -89,16 +248,17 @@
                         <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
                     </div>
                 </div>
-                <div class="contact-right"></div>
-                <form>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit">Submit</button>
-
-                </form>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
